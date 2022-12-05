@@ -1,1 +1,10 @@
 /* TODO: Jared's css */
+
+.btn-primary {
+    background-color: #979778;
+    border-color: #979778;
+}
+
+.btn-light {
+    border-color: #979778;
+}
