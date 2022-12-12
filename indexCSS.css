@@ -282,7 +282,6 @@ body h1 {
 
 #aboutUs{
     min-height: 200px;
-    /* background-image: url("Images/laptop.png"); */
     background-image: url("Images/imageTwo.jpg");
     background-position: center;
     background-size: cover;
