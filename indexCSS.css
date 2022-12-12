@@ -40,7 +40,7 @@ body h1 {
     background-color:  #9BD9E2;
 }
 
-#donateButton{
+#DonateButton{
     border: 1px solid #ccc;
     padding: 2px;
     margin-bottom: 5px;
@@ -48,7 +48,7 @@ body h1 {
    
 }
 
-body a {
+h3 a {
     color: #9BD9E2;
     text-decoration: rgb(192, 177, 13);
     text-transform: uppercase;
