@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- * Comment Color-Coding -->
-<!-- ! Wyatt -->
-<!-- ? Heather -->
-<!-- TODO: Jared -->
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="author" content="Wyatt Adkins,Jared Conner,Heather Mills">
-  <!-- TODO: This is Jared's Font Awesome Kit, but all the images are free, any kit can be used. -->
-  <script src="https://kit.fontawesome.com/09f0a1845e.js" crossorigin="anonymous"></script>
-  <title>Queen City Bike</title>
-  <link rel="stylesheet" href="aboutusCSS.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/5bee4b2e372b967845deb1f6/1555892708419-FCIQ7ITTFF62X60326T2/favicon.ico?format=100w">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <title>Donate - Queen City Bike</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="aboutusCSS.css">
 </head>
 
 <body>
@@ -32,15 +26,15 @@
       <nav>
         <ul>
           <li>
-            <a href="index.html">HOME</a>
+            <a id="hover" href="index.html">HOME</a>
           </li>
 
           <li>
-            <a href="aboutus.html">Donate</a>
+            <a id="hover" href="aboutus.html">Donate</a>
           </li>
 
           <li>
-            <a href="events.html">EVENTS</a>
+            <a id="hover" href="events.html">EVENTS</a>
           </li>
 
         </ul>
@@ -48,7 +42,7 @@
     </div>
   </header>
 
-  <!-- !stuff goes here!!! -->
+  <!-- ! Content goes here!!! -->
  
  <!-- ? -->
  <!-- Showcase Section -->
@@ -57,50 +51,82 @@
      <h1>
        Donate
      </h1>
-     <h2>
+     <p>
        Your contributions help to support our mission to make cycling safer!
-     </h2>
+     <p>
    </div>
  </section>
         
-<!-- ? -->
- <!-- Boxes -->
-<section id="boxes">
-  <div class="container">
-    <div class="box">
-
-      <h1>Click Here To Donate Now</h1>
-      <button class="btn-1">Donate</button>
+ 
+ <section id="services">
+   <div class="container">
+       <h1 class="page-title">Donation info</h1>
+       <ul>
+         <li>
+           <h2>Give once</h2>
+           <p>A single Donation will be taken out of your Bank account</p>
+           <br>
+           <p>*Pricing: 15$-35$</p>
+          </li>
+          <br>
+          <li>
+            <h2>Give monthly</h2>
+            <p> A monthly Donation will be taken from your bank Account. These donations range in price starting at 5 dollars </p>
+            <br>
+            <p>*Pricing: 5$,10$,15$,20$,25$</p>
+          </li>
+        </ul>
+    </section>
+  </div>
+  
+  <!--
+    <h3 id="DonateButton"><a href="aboutus.html">Click Here To Donate</a></h3> 
+  -->
+  
+  <!-- ? -->
+   <!-- Boxes -->
+  <section id="boxes">
+    <div class="container">
+      <div class="box">
+  
+        <h1>Click Here To Donate Now</h1>
+        <button class="btn-1">Donate</button>
+      </div>
     </div>
-  </div>
-</section>
-
-<!-- ? -->
-<!-- Newsletter -->
-<section id="newsletter">
-  <div class="container">
-    <h1>
-      Subscribe to Our Newsletter
-    </h1>
-    <form>
-      <input type="email" placeholder="Enter Email..."
-      name="email" title="Subscribe">
-      <button class="btn-1">Subscribe</button>
-    </form>
-  </div>
-</section>
+  </section>
 
 
 <!-- ? -->
 <!-- About -->
-<section id"about">
-<div class="container">
-  <p>
-    Queen City Bike is a tax-exempt organization located in Newport, KY. It is under the category of a Charitable Organization and contributions are tax deductible.
-  </p>
-
-  
-
+<section id="about">
+  <div class="container">
+    <p>
+      Queen City Bike is a tax-exempt organization located in Newport, KY. It is under the category of a Charitable Organization and contributions are tax deductible.
+    </p>
+    <p>
+      Queen City Bike is a tax-exempt organization located in Newport, Kentucky. The Employer Identification Number (EIN) for Queen City Bike is 264413265. EIN is also referred to as FEIN (Federal Employer Identification Number) or FTIN (Federal Tax Identification Number).
+    </p>
+    <p>
+      The organization type for Queen City Bike is Corporation and its contribution deductibility status is Contributions are deductible. Queen City Bike is exempted by IRS under the category of Charitable Organization, Educational Organization. The organization is an independent organization or an independent auxiliary. 
+    </p>
+    
+    <hr>
+    
+    <!-- ? -->
+    <!-- Newsletter -->
+    <section id="newsletter">
+      <div class="container">
+        <h1>
+          Subscribe to Our Newsletter
+        </h1>
+        <form>
+          <input type="email" placeholder="Enter Email..."
+          name="email" title="Subscribe">
+          <button class="btn-1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+    
 
 </div>
 </section>
@@ -108,8 +134,7 @@
 
 	<!-- ? -->
   <!-- Contact Section -->
-  <section>
-    <aside class="sidebar">
+  <section class="sidebar">
       <div class="dark"> 
         <h2>Get In Touch</h2>
         <form class="contact">
@@ -128,14 +153,13 @@
           <div>
             <label for="message">Message</label>
             <br>
-            <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+            <textarea name="message" id="message" placeholder="Message" cols="100" rows="15"></textarea>
           </div>
           <button class="btn-1">Send</button>
 
         </form>
 
       </div>
-    </aside>
   </section>
 
 				
@@ -165,6 +189,11 @@
       <!-- ! -->
   </footer>
 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 </body>
 
     

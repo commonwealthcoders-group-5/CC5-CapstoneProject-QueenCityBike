@@ -12,14 +12,14 @@ body {
     font-size: 15px;
     padding: 0;
     margin: 0;
+    width: auto;
     line-height: 1.5;
     background-color: #ffffdb;
 }
 
 .container {
-    width: 80%;
+    width: auto;
     margin: auto;
-    /* The overflow property determines what to do if content overflows an element's box. Setting overflow to hidden will hide/clip the overflowing content. */
     overflow: hidden;
 }
 
@@ -44,7 +44,7 @@ header {
     color: #000000;
     min-height: 70px;
     border-bottom: 5px solid #979778;
-    padding: 5px 0;
+    padding: 10px 0;
 
 }
 
@@ -68,7 +68,7 @@ header a {
     color: #ffffff;
     text-decoration: rgb(192, 177, 13);
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 30px;
 }
 
 /* specificity battle */
@@ -87,6 +87,7 @@ a:hover {
 #showcase {
     min-height: 400px;
     /* background-image: url("Images/laptop.png"); */
+    margin-bottom: 20px;
     background-image: url("Images/imageThree.jpg");
     background-position: center;
     background-size: cover;
@@ -97,32 +98,15 @@ a:hover {
 #showcase h1 {
     margin-top: 100px;
     margin-bottom: 10px;
-    font-size: 55px;
+    font-size: 100px;
+    text-shadow: 2px 2px 8px #000000;
 }
 
 #showcase p {
-    font-size: 20px;
+    font-size: 25px;
+    text-shadow: 2px 2px 8px #000000;
 }
 
-#about {
-    background-color: #670000;
-    padding: 20px;
-}
-
-#about>.container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-column-gap: 50px;
-}
-
-#about .main-col {
-    color: #fff;
-}
-
-#about .sidebar {
-    margin-top: 10px;
-
-}
 
 /* home page stuff */
 
@@ -139,38 +123,6 @@ footer {
     border-top: 5px solid#979778;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-
-    header>.container,
-    #newsletter>.container,
-    #boxes>.container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-
-    #showcase .container {
-        padding-bottom: 50px;
-    }
-
-    .box {
-        width: 80%;
-    }
-
-    #about>.container,
-    #services>.container {
-        grid-template-columns: 1fr;
-    }
-}
-
-#hope {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
 * {
     padding: 0;
@@ -178,68 +130,21 @@ footer {
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    line-height: 1.5;
-}
-
-#click:hover {
-    transform: scale(0.95);
-}
-
-#about {
-    padding: 50px;
-    text-align: center;
-}
-
-#about p {
-    font-size: 20px;
-    max-width: 500px;
-    margin: auto;
-}
-
-#about h2 {
-    margin: 40px 0;
-    color: #4b5163;
-}
-
-i {
-    font-size: 48px;
-    margin: 0 5px;
-}
-
-#para {
-    text-align: center;
-    font-size: 90px;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-
-#tophat {
-    color: white;
-    background-color: black;
-    line-height: 205px;
-    text-align: center;
-    font-size: 90px;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-
-.okay {
-    width: 20.5%;
-    margin: 1.25%;
-    float: left;
+#hover:hover {
+    color: #f6f065;
 }
 
 p {
     text-align: center;
 }
 
-#white {
-    color: white;
-}
-
-
 
 /* ! footer css */
+
+footer p {
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px black;
+}
 
 footer ul {
     height: 100%;
@@ -252,4 +157,10 @@ footer li {
     list-style: none;
     padding: 0 20px;
     margin: auto;
+}
+
+@media (max-width: 425px) {
+    body {
+        width: fit-content;
+    }
 }

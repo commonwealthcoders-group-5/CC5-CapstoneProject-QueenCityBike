@@ -1,5 +1,14 @@
 /* TODO: Jared's css */
 
+#showcase {
+    background-image: url("Images/imageSix.jpg");
+    margin-bottom: 30px;
+}
+
+h1#title {
+    font-size: 120px;
+}
+
 .btn-primary {
     background-color: #979778;
     border-color: #979778;
@@ -7,4 +16,10 @@
 
 .btn-light {
     border-color: #979778;
+}
+
+@media (max-width: 425px) {
+    h1#title {
+        font-size: 90px;
+    }
 }

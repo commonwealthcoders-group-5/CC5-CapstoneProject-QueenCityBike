@@ -1,15 +1,6 @@
 /*? Heather's css */
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;700&display=swap');
 
-body{
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 15px;
-    padding: 0;
-    margin: 0;
-    line-height: 1.5;
-    background-color: #ffffdb;}
-
-
 	.btn-1{
 		height: 38px;
 		background-color: #979778;
@@ -23,20 +14,18 @@ body{
 		padding:15px;
 		margin-top: 10px;
 		margin-bottom: 10px;
-		background-color: lightgrey;
-		color: white;
+		background-color: #9BD9E2;
 	}
 
 	/* ? Showcase */
 	#showcase{
+		background-image: url("Images/imageFive.jpg");
 		text-align: center;
 		color: #fff}
 
 	/* ? Newsletter */
 	#newsletter{
 		padding: 15px;
-		color: #9BD9E2;
-
 	}
 
 	#newsletter > .container{
@@ -45,28 +34,38 @@ body{
 		padding-top: 10px;
 		justify-content: center;
 	}
-
-	#boxes > .container{
-		display: flex;
-		padding: 15px;
-		text-align: center;
-		color: #9BD9E2
+	
+	#newsletter form {
+		margin-left: 20px;
 	}
 
-	#boxes{
-		justify-content: center;
+	#boxes > .container{
+		align-items: center;
+		padding: 15px;
+		text-align: center;
+		margin: 10px;
 	}
 
 	.sidebar{
+		display: flex;
 		margin-top: 10px;
-		margin-right:10px
-		
+		margin-right:10px;
+		justify-content: center;
 	}
 
-	
-		
-	
+	#services {
+		display: flex;
+	}
 
+	#services li {
+		border: 1px solid #ccc;
+		padding: 20px;
+		margin-bottom: 5px;
+		background-color:  #9BD9E2;
+	}
 
-
+	p {
+		text-align: center;
+		font-size: 25px;
+	}
 	
